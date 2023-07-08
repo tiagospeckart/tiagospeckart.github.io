@@ -1,0 +1,36 @@
+.button {
+    padding: 8px;
+    margin: 0;
+}
+
+button {
+    border: none;
+    padding: 0 58px;
+    width: auto;
+    overflow: visible;
+    background-color: rgb(52, 152, 219);
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+button:hover {
+    background-color: rgb(52, 219, 191);
+    text-decoration: underline;
+    color: rgb(15, 5, 1);
+}
+
+.info {
+    background-color: rgb(44, 129, 186);
+    padding: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: larger;
+    color: blanchedalmond;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
