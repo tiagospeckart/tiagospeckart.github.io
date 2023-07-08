@@ -1,3 +1,11 @@
+:root {
+    --ash-gray: #cbd4c2ff;
+    --tea-green: #dbebc0ff;
+    --khaki: #c3b299ff;
+    --rose-taupe: #815355ff;
+    --violet-jtc: #523249ff;
+}
+
 *{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 0 1px 0 rgba(49, 28, 0, 0.2);

@@ -32,8 +32,22 @@ header{
     color: var(--tea-green);
 }
 
+h1{
+    font-size: 1rem;
+}
+
+p{
+    padding-top: 2vw;
+    font-size: 1rem;
+}
+
 header h1 {
     margin-bottom: 1vw;
+    font-size: 3rem;
+}
+
+header p{
+    font-size: 1.5rem;
 }
 
 header section{
@@ -82,14 +96,6 @@ section{
     }
 }
 
-h1{
-    font-size: 1rem;
-}
-
-p{
-    padding-top: 2vw;
-    font-size: 1rem;
-}
 
 footer h1{
     margin-bottom: 2vw;

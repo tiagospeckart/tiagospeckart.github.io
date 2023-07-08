@@ -1,3 +1,11 @@
+:root {
+    --ash-gray: #cbd4c2ff;
+    --tea-green: #dbebc0ff;
+    --khaki: #c3b299ff;
+    --rose-taupe: #815355ff;
+    --violet-jtc: #523249ff;
+}
+
 .button {
     padding: 8px;
     margin: 0;
