@@ -84,7 +84,13 @@ section{
 }
 
 h1{
-    font-size: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+h2{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
 }
 
 p{
@@ -107,6 +113,23 @@ section ul li {
 
 footer section ul li:last-child {
     margin-right: 0;
+}
+
+button{
+    padding: 1.5rem;
+    background-color: var(--violet-jtc);
+    color: var(--ash-gray);
+    border: none;
+    border-radius: 10px;
+}
+
+.button-container{
+    margin-bottom: 3vh;
+}
+
+.button-container input{
+    padding: 1.1rem;
+    font-size: larger;
 }
 
 .flex{

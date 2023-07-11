@@ -140,7 +140,7 @@ footer section ul li:last-child {
 }
 
 .table .cell {
-    flex-basis: 100%; /* On small screens, take up the whole row width */
+    flex-basis: 100%;
     box-sizing: border-box;
     padding: 10px;
     border: 1px solid var(--rose-taupe);
