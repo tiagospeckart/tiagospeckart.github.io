@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Endereço</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/a2a8f80f16.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</head>
+<body>
+    <main>
+        <h1 style="text-align: center">Consulta de Endereço</h1>
+
+        <form>
+            <div class="input-field">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" required>
+            </div>
+
+            <div class="input-field">
+                <label for="rua">Rua</label>
+                <input type="text" id="rua" required disabled>
+            </div>
+
+            <div class="input-field">
+                <label for="complemento">Complemento</label>
+                <input type="text" id="complemento" required disabled>
+            </div>
+
+            <div class="input-field">
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" required disabled>
+            </div>
+
+            <div class="input-field">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" required disabled>
+            </div>
+
+            <div class="input-field">
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" required disabled>
+            </div>
+        </form>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>
