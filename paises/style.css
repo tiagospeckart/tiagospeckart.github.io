@@ -13,6 +13,10 @@ body {
     justify-content: center;
 }
 
+section{
+    margin-left: 40px;
+}
+
 div{
     display: flex;
     flex-direction: column;
@@ -20,11 +24,16 @@ div{
 }
 
 select{
-    padding: 2vw;
-    margin-right: 2vw;
-    font-size: x-large;
+    margin: 50px;
+    width: 150px;
+    padding: 5px 40px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    height: 40px;
+    font-size: large;
     background-color: var(--flame);
     color: var(--platinum);
+    border: 1px solid #CCC;
 }
 
 h1{
@@ -42,4 +51,8 @@ a{
 
 a:hover{
     text-decoration: underline;
+}
+
+img{
+    width: 200px;
 }
