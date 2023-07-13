@@ -1,11 +1,9 @@
 $(document).ready(function(){
-    $("#cep").mask("00000-000");
 
-    $("#cep").focusout(function(){
-        var cep = $(this).val().replace(/\D/g, '');
+    $("#cbPais").focusout(function(){
+        var pais = $(this).val();
 
-        if (cep !== "") {
-            var validacep = /^[0-9]{8}$/;
+        if (pais !== "Selecione um País") {
             if(validacep.test(cep)) {
                 $("#rua").val("...");
                 $("#complemento").val("...");

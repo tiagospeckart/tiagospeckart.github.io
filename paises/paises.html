@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações de países</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="custom-select" style="width:200px;">
+        <select name="cbPais" id="paises">
+            <optgroup label="Americanos">
+                <option value="Mexico">Mexico</option>
+            </optgroup>
+            <optgroup label="Europeus">
+                <option value="Slovenia">Slovenia</option>
+                <option value="Austria">Austria</option>
+            </optgroup>
+            <optgroup label="Africanos">
+                <option value="Benin">Benin</option>
+            </optgroup>
+            <optgroup label="Asiaticos">
+                <option value="Bahrain">Bahrain</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <section>
+        <div id="countryInfo"></div>
+        <a id="countryPhotosLink" target="_blank">Veja fotos do país</a>
+    </section>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

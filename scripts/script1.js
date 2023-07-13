@@ -50,3 +50,37 @@ function converterHorasParaMinutos(horas){
     return minutos;
 }
 
+
+function exibirMedia() {
+    let nota1 = 8;
+    let nota2 = 7;
+    let nota3 = 9;
+    let mediaNotas = calcularMedia(nota1, nota2, nota3);
+    alert("Média das notas:\nNota 1: " + nota1 + "\nNota 2: " + nota2 + "\nNota 3: " + nota3 + "\nMédia: " + mediaNotas);
+}
+
+function exibirTemperatura() {
+    let celsius = 25;
+    let temperaturaFahrenheit = converterCelsiusParaFahrenheit(celsius);
+    alert("Temperatura em Celsius: " + celsius + "\nTemperatura em Fahrenheit: " + temperaturaFahrenheit);
+}
+
+function exibirArea() {
+    let largura = 5;
+    let altura = 10;
+    let areaRetangulo = calcularAreaRetangulo(largura, altura);
+    alert("Largura do retângulo: " + largura + "\nAltura do retângulo: " + altura + "\nÁrea do retângulo: " + areaRetangulo);
+}
+
+function exibirIMC() {
+    let peso = 70;
+    let altura = 1.75;
+    let imc = calcularIMC(peso, altura);
+    alert("Peso: " + peso + " kg\nAltura: " + altura + " m\nIMC: " + imc);
+}
+
+function exibirMinutos() {
+    let horas = 2;
+    let minutos = converterHorasParaMinutos(horas);
+    alert("Horas: " + horas + "\nMinutos: " + minutos);
+}

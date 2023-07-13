@@ -7,45 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="indexStyle.css">
     <script src="https://kit.fontawesome.com/a2a8f80f16.js" crossorigin="anonymous"></script>
+    <script src="scripts/script1.js"></script>
+    <script src="scripts/script2.js"></script>
 </head>
 <body>
-    <script src="scripts/script1.js"></script>
-    <script>
-        function exibirMedia() {
-            let nota1 = 8;
-            let nota2 = 7;
-            let nota3 = 9;
-            let mediaNotas = calcularMedia(nota1, nota2, nota3);
-            alert("Média das notas:\nNota 1: " + nota1 + "\nNota 2: " + nota2 + "\nNota 3: " + nota3 + "\nMédia: " + mediaNotas);
-        }
-
-        function exibirTemperatura() {
-            let celsius = 25;
-            let temperaturaFahrenheit = converterCelsiusParaFahrenheit(celsius);
-            alert("Temperatura em Celsius: " + celsius + "\nTemperatura em Fahrenheit: " + temperaturaFahrenheit);
-        }
-
-        function exibirArea() {
-            let largura = 5;
-            let altura = 10;
-            let areaRetangulo = calcularAreaRetangulo(largura, altura);
-            alert("Largura do retângulo: " + largura + "\nAltura do retângulo: " + altura + "\nÁrea do retângulo: " + areaRetangulo);
-        }
-
-        function exibirIMC() {
-            let peso = 70;
-            let altura = 1.75;
-            let imc = calcularIMC(peso, altura);
-            alert("Peso: " + peso + " kg\nAltura: " + altura + " m\nIMC: " + imc);
-        }
-
-        function exibirMinutos() {
-            let horas = 2;
-            let minutos = converterHorasParaMinutos(horas);
-            alert("Horas: " + horas + "\nMinutos: " + minutos);
-        }
-    </script>
-
     <header>
         <section class="flex flex-row">
             <div id="logo-div">
@@ -58,63 +23,21 @@
         </section>
     </header>
     <main>
-        
         <section>
             <div>
                 <h2><a href="profile/profile.html">Perfil</a></h2>
             </div>
         </section>
-
         <section>
             <div>
                 <h2>Exercícios</h2>
                 <ul>
-                    <li>
-                        <a href="exercícios/one.html">Primeiro: básico de Flexbox</a>
-                    </li>
-                    <li>
-                        <a href="exercícios/two.html">Segundo: design de botão + hover + animação</a>
-                    </li>
-                    <li>
-                        <a href="exercícios/three.html">Terceiro: estilização de Formulário</a>
-                    </li>
+                    <li><a href="exercícios/one.html">Primeiro: básico de Flexbox</a></li>
+                    <li><a href="exercícios/two.html">Segundo: design de botão + hover + animação</a></li>
+                    <li><a href="exercícios/three.html">Terceiro: estilização de Formulário</a></li>
                 </ul>
             </div>
         </section>
-
-        <script src="scripts/script2.js"></script>
-        <script>
-            // 1. Script para concatenar nome e sobrenome
-            function concatenarNomeSobrenome(nome, sobrenome){
-                let nomeCompleto = nome + " " + sobrenome;
-                return "Nome completo: " + nomeCompleto;
-            }
-    
-            // 2. Script para contar caracteres
-            function contarCaracteres(string){
-                let totalCaracteres = string.length;
-                return "Total de caracteres: " + totalCaracteres;
-            }
-    
-            // 3. Script para converter string para maiúsculas
-            function converterParaMaiusculas(string){
-                let stringMaiuscula = string.toUpperCase();
-                return "Frase em maiúsculas: " + stringMaiuscula;
-            }
-    
-            // 4. Script para extrair parte de uma string
-            function extrairParteString(string){
-                let parteString = string.substring(0, 3);
-                return "Primeiros três caracteres: " + parteString;
-            }
-    
-            // 5. Script para substituir letras
-            function substituirLetras(string){
-                let novaString = string.replace(/A/gi, '4').replace(/I/gi, '1').replace(/E/gi, '3').replace(/O/gi, '0').replace(/S/gi, '5');
-                return "Frase com letras substituídas: " + novaString;
-            }
-        </script>
-
         <section>
             <div>
                 <h2>Scripts JavaScript I</h2>
@@ -125,45 +48,42 @@
                 <button onclick="exibirMinutos()">Converter Horas para Minutos</button>
             </div>
         </section>
-
         <section>
             <div>
                 <h2>Scripts JavaScript II</h2>
-
-                <!-- Concatenar nome e sobrenome -->
                 <div class="button-container">
                     <input type="text" id="nome" placeholder="Nome">
                     <input type="text" id="sobrenome" placeholder="Sobrenome">
                     <button onclick="alert(concatenarNomeSobrenome(document.getElementById('nome').value, document.getElementById('sobrenome').value))">Concatenar nome e sobrenome</button>
                 </div>
-
-                <!-- Contar caracteres -->
                 <div class="button-container">
                     <input type="text" id="string1" placeholder="String">
                     <button onclick="alert(contarCaracteres(document.getElementById('string1').value))">Contar caracteres</button>
                 </div>
-
-                <!-- Converter string para maiúsculas -->
                 <div class="button-container">
                     <input type="text" id="string2" placeholder="String">
                     <button onclick="alert(converterParaMaiusculas(document.getElementById('string2').value))">Converter para maiúsculas</button>
                 </div>
-
-                <!-- Extrair parte de uma string -->
                 <div class="button-container">
                     <input type="text" id="string3" placeholder="String">
                     <button onclick="alert(extrairParteString(document.getElementById('string3').value))">Extrair primeiros três caracteres</button>
                 </div>
-
-                <!-- Substituir letras -->
                 <div class="button-container">
                     <input type="text" id="string4" placeholder="String">
-                    <button onclick="alert(substituirLetras(document.getElementById('string4').value))">Substituir letras A -> 4
-                        / I (letra i) -> 1
-                        / E -> 3
-                        / O (letra ó) -> 0 (zero)
-                        / S -> 5</button>
+                    <button onclick="alert(substituirLetras(document.getElementById('string4').value))">Substituir letras A -> 4 / I (letra i) -> 1 / E -> 3 / O (letra ó) -> 0 (zero) / S -> 5</button>
                 </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Buscador de CEP</h2>
+                <a href="cep/cep.html">Buscador de CEP</a>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Informações de Países</h2>
+                <a href="paises/paises.html">Dados de países</a>
             </div>
         </section>
     </main>
